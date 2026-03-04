@@ -1,0 +1,33 @@
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temp files
+*.tmp
+*.temp
+.cache/
+
+# Build files
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# Assets to be uploaded manually
+assets/*
+!assets/.gitkeep
