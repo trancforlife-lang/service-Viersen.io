@@ -3,68 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professionelle IT-Reparaturdienstleistungen in Deutschland. PC, Laptop, Kamera-Installation und Datenrettung. Schneller und zuverlässiger Service.">
-    <meta name="keywords" content="IT Reparatur, PC Reparatur, Laptop Reparatur, Kamera Installation, Datenrettung, Berlin, Deutschland">
+    <meta name="description" content="Professionelle IT-Reparaturdienstleistungen in Deutschland. PC, Laptop, Kamera-Installation und Datenrettung. Schneller Service, faire Preise, 12 Monate Garantie.">
+    <meta name="keywords" content="IT Reparatur, PC Reparatur, Laptop Reparatur, Kamera Installation, Datenrettung, Viersen, Deutschland">
     <meta name="author" content="IT Repair Shop">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="IT Reparatur Service Deutschland | Professionelle Computer-Reparatur">
-    <meta property="og:description" content="Professionelle IT-Reparaturdienstleistungen in Deutschland. PC, Laptop, Kamera-Installation und Datenrettung.">
+    <meta property="og:description" content="Professionelle IT-Reparaturdienstleistungen. 10+ Jahre Erfahrung, 5000+ zufriedene Kunden.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
     <link rel="canonical" href="https://it-repair-shop.de">
     <title>IT Reparatur Service Deutschland | Professionelle Computer-Reparatur</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "IT Repair Shop",
+        "description": "Professionelle IT-Reparaturdienstleistungen in Deutschland",
+        "telephone": "+49-30-12345678",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kapellenstraße 17",
+            "addressLocality": "Viersen",
+            "postalCode": "10115",
+            "addressCountry": "DE"
+        }
+    }
+    </script>
 </head>
 <body>
-    <nav class="navbar">
+    <!-- Emergency Banner -->
+    <div class="emergency-banner" role="alert">
         <div class="container">
-            <div class="nav-brand">
-                <i class="fas fa-tools"></i>
+            <i class="fas fa-bolt" aria-hidden="true"></i>
+            <span><strong>Notfall-Service:</strong> Wir sind auch am Wochenende für Sie da!
+            <a href="tel:+49216212345678"><i class="fas fa-phone"></i> 02162 123 456 78</a></span>
+            <button class="banner-close" aria-label="Banner schließen">&times;</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Hauptnavigation">
+        <div class="container">
+            <a href="#home" class="nav-brand" aria-label="IT Repair Shop Startseite">
+                <i class="fas fa-tools" aria-hidden="true"></i>
                 <span>IT Repair Shop</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Startseite</a></li>
-                <li><a href="#services">Leistungen</a></li>
-                <li><a href="#about">Über uns</a></li>
-                <li><a href="#contact" class="btn-primary">Kontakt</a></li>
+            </a>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Startseite</a></li>
+                <li role="none"><a href="#services" role="menuitem">Leistungen</a></li>
+                <li role="none"><a href="#pricing" role="menuitem">Preise</a></li>
+                <li role="none"><a href="#testimonials" role="menuitem">Bewertungen</a></li>
+                <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+                <li role="none"><a href="#contact" role="menuitem" class="btn-primary">Kontakt</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
-    <section id="home" class="hero">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Professionelle IT-Reparatur in Deutschland</h1>
-                    <p>Ihre Experten für Computer-, Laptop-Reparatur und Kamera-Installation. Schnelle Diagnose, faire Preise und 100% Kundenzufriedenheit.</p>
+                    <div class="hero-badge">
+                        <i class="fas fa-award" aria-hidden="true"></i>
+                        <span>Über 10 Jahre Erfahrung</span>
+                    </div>
+                    <h1 id="hero-title">Professionelle IT-Reparatur in Deutschland</h1>
+                    <p class="hero-description">Ihre Experten für Computer-, Laptop-Reparatur und Kamera-Installation. Schnelle Diagnose, faire Preise und 100% Kundenzufriedenheit.</p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn-primary">Kostenlose Anfrage</a>
-                        <a href="#services" class="btn-secondary">Unsere Leistungen</a>
+                        <a href="#contact" class="btn-primary btn-lg">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Kostenlose Anfrage
+                        </a>
+                        <a href="#services" class="btn-secondary btn-lg">
+                            <i class="fas fa-list" aria-hidden="true"></i> Unsere Leistungen
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <div class="trust-stars" aria-label="4.9 von 5 Sternen">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.9</span>
+                            </div>
+                            <span class="trust-text">487 Bewertungen</span>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-features">
                     <div class="trust-badges">
-                        <div class="badge"><i class="fas fa-check-circle"></i><span>Schneller Service</span></div>
-                        <div class="badge"><i class="fas fa-shield-alt"></i><span>12 Monate Garantie</span></div>
-                        <div class="badge"><i class="fas fa-euro-sign"></i><span>Faire Preise</span></div>
+                        <div class="badge">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <div>
+                                <strong>Schneller Service</strong>
+                                <span>24-48 Stunden</span>
+                            </div>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                            <div>
+                                <strong>12 Monate Garantie</strong>
+                                <span>Auf alle Reparaturen</span>
+                            </div>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+                            <div>
+                                <strong>Faire Preise</strong>
+                                <span>Kostenlose Diagnose</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="services" class="services">
+
+    <!-- Services Section -->
+    <section id="services" class="services" aria-labelledby="services-title">
         <div class="container">
             <div class="section-header">
-                <h2>Unsere Leistungen</h2>
+                <span class="section-tag">Unsere Expertise</span>
+                <h2 id="services-title">Leistungen im Überblick</h2>
                 <p>Wir bieten umfassende IT-Dienstleistungen für Privat- und Geschäftskunden</p>
             </div>
             <div class="services-grid">
@@ -72,181 +146,486 @@
                     <div class="service-icon"><i class="fas fa-laptop"></i></div>
                     <h3>Laptop-Reparatur</h3>
                     <p>Hardware- und Software-Probleme, Bildschirmtausch, Tastaturreparatur und mehr für alle Marken.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Display-Reparatur</li>
+                        <li><i class="fas fa-check"></i> Akku-Austausch</li>
+                        <li><i class="fas fa-check"></i> Mainboard-Reparatur</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Jetzt anfragen <i class="fas fa-arrow-right"></i></a>
                 </article>
                 <article class="service-card">
                     <div class="service-icon"><i class="fas fa-desktop"></i></div>
                     <h3>PC-Reparatur</h3>
                     <p>Diagnose und Reparatur von Desktop-Computern, Gaming-PCs und Workstations.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Hardware-Upgrade</li>
+                        <li><i class="fas fa-check"></i> System-Optimierung</li>
+                        <li><i class="fas fa-check"></i> Komplettaufbau</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Jetzt anfragen <i class="fas fa-arrow-right"></i></a>
                 </article>
-                <article class="service-card">
+                <article class="service-card featured">
+                    <div class="featured-badge">Beliebt</div>
                     <div class="service-icon"><i class="fas fa-video"></i></div>
                     <h3>Kamera-Installation</h3>
                     <p>Professionelle Überwachungskameras für Ihr Zuhause oder Unternehmen. Einrichtung und Konfiguration.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> IP-Kameras</li>
+                        <li><i class="fas fa-check"></i> NAS-Aufzeichnung</li>
+                        <li><i class="fas fa-check"></i> Fernzugriff-Setup</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Jetzt anfragen <i class="fas fa-arrow-right"></i></a>
                 </article>
                 <article class="service-card">
                     <div class="service-icon"><i class="fas fa-database"></i></div>
                     <h3>Datenrettung</h3>
                     <p>Wiederherstellung verlorener Daten von Festplatten, SSDs und anderen Speichermedien.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> HDD/SSD</li>
+                        <li><i class="fas fa-check"></i> USB-Sticks</li>
+                        <li><i class="fas fa-check"></i> SD-Karten</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Jetzt anfragen <i class="fas fa-arrow-right"></i></a>
                 </article>
                 <article class="service-card">
                     <div class="service-icon"><i class="fas fa-network-wired"></i></div>
                     <h3>Netzwerk & IT-Infrastruktur</h3>
                     <p>Einrichtung und Wartung von Netzwerken für zu Hause und kleine Unternehmen.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> WLAN-Optimierung</li>
+                        <li><i class="fas fa-check"></i> VPN-Setup</li>
+                        <li><i class="fas fa-check"></i> Server-Konfiguration</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Jetzt anfragen <i class="fas fa-arrow-right"></i></a>
                 </article>
                 <article class="service-card">
                     <div class="service-icon"><i class="fas fa-shield-virus"></i></div>
                     <h3>Virusentfernung & Sicherheit</h3>
                     <p>Entfernung von Malware, Viren und Ransomware. Schutz für Ihre Geräte.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Virenentfernung</li>
+                        <li><i class="fas fa-check"></i> Firewall-Setup</li>
+                        <li><i class="fas fa-check"></i> Sicherheitsberatung</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Jetzt anfragen <i class="fas fa-arrow-right"></i></a>
                 </article>
             </div>
         </div>
     </section>
-    <section id="about" class="about">
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing" aria-labelledby="pricing-title">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Warum uns wählen?</h2>
-                    <p>Mit über 10 Jahren Erfahrung in der IT-Branche sind wir Ihr zuverlässiger Partner für alle technischen Probleme.</p>
-                    <div class="about-features">
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Zertifizierte Techniker</li>
-                            <li><i class="fas fa-check"></i> Original Ersatzteile</li>
-                            <li><i class="fas fa-check"></i> Vor-Ort-Service verfügbar</li>
-                            <li><i class="fas fa-check"></i> 24/7 Notfallservice</li>
-                        </ul>
+            <div class="section-header">
+                <span class="section-tag">Transparente Preise</span>
+                <h2 id="pricing-title">Unsere Preisübersicht</h2>
+                <p>Faire und transparente Preisgestaltung - keine versteckten Kosten</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Diagnose</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount">0</span>
+                            <span class="period">kostenlos</span>
+                        </div>
                     </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Fehleranalyse</li>
+                        <li><i class="fas fa-check"></i> Kostenvoranschlag</li>
+                        <li><i class="fas fa-check"></i> Beratungsgespräch</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Termin vereinbaren</a>
                 </div>
-                <div class="about-stats">
-                    <div class="stat"><div class="stat-number">10+</div><div class="stat-label">Jahre Erfahrung</div></div>
-                    <div class="stat"><div class="stat-number">5000+</div><div class="stat-label">Zufriedene Kunden</div></div>
-                    <div class="stat"><div class="stat-number">98%</div><div class="stat-label">Erfolgsquote</div></div>
-                    <div class="stat"><div class="stat-number">24h</div><div class="stat-label">Schnelle Reparatur</div></div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Meistgewählt</div>
+                    <div class="pricing-header">
+                        <h3>Standard-Reparatur</h3>
+                        <div class="price">
+                            <span class="currency">ab €</span>
+                            <span class="amount">49</span>
+                            <span class="period">pro Gerät</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Software-Probleme</li>
+                        <li><i class="fas fa-check"></i> Treiber-Installation</li>
+                        <li><i class="fas fa-check"></i> System-Optimierung</li>
+                        <li><i class="fas fa-check"></i> 12 Monate Garantie</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Jetzt buchen</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Hardware-Reparatur</h3>
+                        <div class="price">
+                            <span class="currency">ab €</span>
+                            <span class="amount">79</span>
+                            <span class="period">+ Ersatzteile</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Display-Tausch</li>
+                        <li><i class="fas fa-check"></i> Akku-Austausch</li>
+                        <li><i class="fas fa-check"></i> Komponenten-Upgrade</li>
+                        <li><i class="fas fa-check"></i> 12 Monate Garantie</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Anfrage senden</a>
+                </div>
+            </div>
+            <p class="pricing-note"><i class="fas fa-info-circle"></i> Alle Preise inkl. 19% MwSt. Individuelle Angebote auf Anfrage.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kundenstimmen</span>
+                <h2 id="testimonials-title">Was unsere Kunden sagen</h2>
+                <p>Über 5.000 zufriedene Kunden vertrauen auf unseren Service</p>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-text">
+                        "Mein Laptop war nach einem Wasserschaden komplett tot. Das Team hat alle Daten gerettet und das Gerät repariert. Absolut professionell!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <strong>Markus K.</strong>
+                            <span>Viersen</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-text">
+                        "Die Kamera-Installation in meinem Geschäft war super schnell und sauber. Funktioniert einwandfrei und der Fernzugriff ist perfekt!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SH</div>
+                        <div class="author-info">
+                            <strong>Sandra H.</strong>
+                            <span>Hamburg</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-text">
+                        "Endlich ein fairer IT-Service! Transparente Preise, schnelle Reparatur und eine freundliche Beratung. Sehr empfehlenswert!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TW</div>
+                        <div class="author-info">
+                            <strong>Thomas W.</strong>
+                            <span>München</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="testimonials-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5000">0</span>
+                    <span class="stat-label">Zufriedene Kunden</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="98">0</span>
+                    <span class="stat-label">% Erfolgsrate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span>
+                    <span class="stat-label">Jahre Erfahrung</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="487">0</span>
+                    <span class="stat-label">Google Bewertungen</span>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact" class="contact">
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Über uns</span>
+                    <h2 id="about-title">Ihr zuverlässiger IT-Partner seit über 10 Jahren</h2>
+                    <p>Wir sind ein Team aus zertifizierten IT-Technikern mit Leidenschaft für Technologie und erstklassigen Kundenservice. Unser Ziel ist es, Ihnen schnell und effizient bei allen IT-Problemen zu helfen.</p>
+                    <ul class="about-features">
+                        <li>
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <strong>Zertifizierte Techniker</strong>
+                                <span>Microsoft und CompTIA zertifiziert</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Schnelle Reaktionszeit</strong>
+                                <span>Meist innerhalb 24 Stunden</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <strong>Persönliche Beratung</strong>
+                                <span>Keine Callcenter, direkter Ansprechpartner</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-users"></i>
+                        <span>Unser Team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq" aria-labelledby="faq-title">
         <div class="container">
             <div class="section-header">
-                <h2>Kontaktieren Sie uns</h2>
-                <p>Wir sind für Sie da! Senden Sie uns eine Anfrage oder rufen Sie uns an.</p>
+                <span class="section-tag">Häufige Fragen</span>
+                <h2 id="faq-title">FAQ - Wir haben die Antworten</h2>
+                <p>Die häufigsten Fragen unserer Kunden auf einen Blick</p>
             </div>
-            <div class="contact-content">
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Wie lange dauert eine typische Reparatur?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Die meisten Reparaturen werden innerhalb von 24-48 Stunden abgeschlossen. Bei komplexeren Fällen oder wenn Ersatzteile bestellt werden müssen, kann es 3-5 Werktage dauern. Wir halten Sie immer auf dem Laufenden!</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Bieten Sie eine Garantie auf Reparaturen?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Ja! Auf alle unsere Reparaturen gewähren wir 12 Monate Garantie. Das gilt sowohl für die Arbeitsleistung als auch für die verwendeten Ersatzteile.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Können Sie auch zu mir nach Hause kommen?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Absolut! Wir bieten einen Vor-Ort-Service in Viersen und Umgebung an. Für Netzwerk-Installationen und Kamera-Systeme ist dies oft die beste Lösung. Rufen Sie uns an für einen Termin.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Wie läuft die Datenrettung ab?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Zuerst erstellen wir eine kostenlose Diagnose und teilen Ihnen die Erfolgsaussichten mit. Nach Ihrer Zustimmung retten wir Ihre Daten auf ein neues Speichermedium. Sie bezahlen nur bei Erfolg!</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Akzeptieren Sie auch Geräte anderer Marken?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Ja, wir reparieren Geräte aller gängigen Marken: Apple, Samsung, Dell, HP, Lenovo, Asus, Acer und viele mehr. Auch selbstaufgebaute PCs sind kein Problem!</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kontakt</span>
+                <h2 id="contact-title">Wir sind für Sie da</h2>
+                <p>Haben Sie Fragen oder benötigen Sie Hilfe? Kontaktieren Sie uns!</p>
+            </div>
+            <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="contact-details">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
                             <h3>Adresse</h3>
-                            <p>Musterstraße 123<br>10115 Berlin, Deutschland</p>
+                            <p>Kapellenstraße 17<br>41751 Viersen</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                        <div class="contact-details">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
                             <h3>Telefon</h3>
-                            <p>+49 30 123456789<br>Mo-Fr: 9:00 - 18:00</p>
+                            <p><a href="tel:+49216212345678">02162 123 456 78</a></p>
+                            <p class="info-note">Mo-Fr: 9-18 Uhr, Sa: 10-14 Uhr</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <div class="contact-details">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
                             <h3>E-Mail</h3>
-                            <p>info@it-repair-shop.de</p>
+                            <p><a href="mailto:info@it-repair-shop.de">info@it-repair-shop.de</a></p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                        <div class="contact-details">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div>
                             <h3>Öffnungszeiten</h3>
-                            <p>Montag - Freitag: 9:00 - 18:00<br>Samstag: 10:00 - 14:00</p>
+                            <p>Montag - Freitag: 09:00 - 18:00<br>Samstag: 10:00 - 14:00</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
-                    <form id="contactForm" class="contact-form">
+                <form class="contact-form" id="contactForm" action="#" method="POST">
+                    <div class="form-row">
                         <div class="form-group">
                             <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
                         </div>
                         <div class="form-group">
                             <label for="email">E-Mail *</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required placeholder="ihre@email.de">
                         </div>
+                    </div>
+                    <div class="form-row">
                         <div class="form-group">
                             <label for="phone">Telefon</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" placeholder="02162 123 456 78">
                         </div>
                         <div class="form-group">
-                            <label for="service">Gewünschte Leistung</label>
-                            <select id="service" name="service">
+                            <label for="service">Service *</label>
+                            <select id="service" name="service" required>
                                 <option value="">Bitte wählen...</option>
                                 <option value="laptop">Laptop-Reparatur</option>
                                 <option value="pc">PC-Reparatur</option>
                                 <option value="camera">Kamera-Installation</option>
                                 <option value="data">Datenrettung</option>
-                                <option value="network">Netzwerk & IT</option>
-                                <option value="virus">Virusentfernung</option>
+                                <option value="network">Netzwerk und IT-Infrastruktur</option>
+                                <option value="virus">Virusentfernung und Sicherheit</option>
                                 <option value="other">Sonstiges</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Nachricht *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="privacy-checkbox">
-                            <input type="checkbox" id="privacy" name="privacy" required>
-                            <label for="privacy">Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzrichtlinie zu *</label>
-                        </div>
-                        <button type="submit" class="btn-submit">Nachricht senden</button>
-                    </form>
-                    <div id="formSuccess" class="form-success" style="display: none;">
-                        <i class="fas fa-check-circle"></i>
-                        <h3>Vielen Dank!</h3>
-                        <p>Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns schnellstmöglich bei Ihnen.</p>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="message">Nachricht *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Beschreiben Sie Ihr Problem oder Ihre Frage..."></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">Ich stimme der <a href="#" target="_blank">Datenschutzerklärung</a> zu *</label>
+                    </div>
+                    <button type="submit" class="btn-primary btn-lg btn-block">
+                        <i class="fas fa-paper-plane"></i> Nachricht senden
+                    </button>
+                </form>
             </div>
         </div>
     </section>
-    <footer class="footer">
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand"><i class="fas fa-tools"></i><span>IT Repair Shop</span></div>
-                    <p>Ihr Partner für professionelle IT-Dienstleistungen in ganz Deutschland.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <i class="fas fa-tools"></i>
+                        <span>IT Repair Shop</span>
+                    </a>
+                    <p>Ihr zuverlässiger Partner für IT-Reparaturen und Dienstleistungen in Deutschland.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Schnellzugriff</h3>
+                <div class="footer-links">
+                    <h4>Leistungen</h4>
                     <ul>
-                        <li><a href="#home">Startseite</a></li>
-                        <li><a href="#services">Leistungen</a></li>
+                        <li><a href="#services">Laptop-Reparatur</a></li>
+                        <li><a href="#services">PC-Reparatur</a></li>
+                        <li><a href="#services">Kamera-Installation</a></li>
+                        <li><a href="#services">Datenrettung</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Unternehmen</h4>
+                    <ul>
                         <li><a href="#about">Über uns</a></li>
+                        <li><a href="#testimonials">Bewertungen</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="#contact">Kontakt</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Rechtliches</h3>
+                <div class="footer-links">
+                    <h4>Rechtliches</h4>
                     <ul>
                         <li><a href="#">Impressum</a></li>
                         <li><a href="#">Datenschutz</a></li>
                         <li><a href="#">AGB</a></li>
+                        <li><a href="#">Widerruf</a></li>
                     </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Folgen Sie uns</h3>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 IT Repair Shop Deutschland. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2024 IT Repair Shop. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>
-    <script src="js/main.js" defer></script>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Nach oben scrollen">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" id="chatToggle" aria-label="Chat öffnen">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge">1</span>
+        </button>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <span><i class="fas fa-headset"></i> Support Chat</span>
+                <button class="chat-close" id="chatClose" aria-label="Chat schließen">&times;</button>
+            </div>
+            <div class="chat-body">
+                <p class="chat-welcome">Hallo! Wie können wir Ihnen helfen?</p>
+                <p class="chat-note">Rufen Sie uns an für schnelle Hilfe:<br><a href="tel:+49216212345678"><strong>02162 123 456 78</strong></a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,11 +1,6 @@
 # robots.txt for IT Repair Shop
-
 User-agent: *
 Allow: /
-
-Disallow: /assets/
-Disallow: /css/
-Disallow: /js/
-Disallow: /temp/
+Disallow: /admin/
 
 Sitemap: https://it-repair-shop.de/sitemap.xml
